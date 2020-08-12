@@ -15,6 +15,17 @@ install opencv:
 	make -j8
 	make install
 
+install cmake:
+	sudo apt-get install cmake
+
 
 part1:
 	test dnn module: darknet yolov3
+	usage:
+		make build
+		cd build
+		cmake ..
+		make 
+		./dnn/dnnDemo cfg weights img
+
+
